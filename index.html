@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<title>Nariesha CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Include W3.CSS for styling -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .mycard {
+      max-width: 350px;
+      height: 400px;
+      margin: 10px;
+      text-align: justify;
+  }
+
+  body {
+      font-family: Georgia, 'Times New Roman';
+      font-size: larger;
+  }
+
+  @media screen and (min-width: 1920px) {
+      body {
+          max-width: 60%;
+          margin: auto;
+      }
+  }
+
+  .card-container {
+      display: flex;
+      justify-content: center;
+  }
+</style>
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right w3-sand" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="#info" class="w3-bar-item w3-button">Personal</a>
+    <a href="#education" class="w3-bar-item w3-button">Education</a>
+    <a href="#work" class="w3-bar-item w3-button">Experience</a>
+    <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+  </div>
+
+  <!-- Action to open Sidebar -->
+  <div class="w3-sand">
+    <button class="w3-button w3-sand w3-xlarge" onclick="w3_open()">☰</button>
+  </div>
+
+  <!-- Header with brief introduction -->
+  <header class="w3-container w3-center w3-padding-32" style="background-image: url('pink.jpg'); background-size: cover;">
+    <p>As a networking-focused sixth-semester IT student, I bring a strong foundation 
+      from my matriculation studies to my current academic endeavours. Merely residing 
+      in Sungai Petani, Kedah, I am the middle sibling among three. I enjoy activities 
+      outside of school, such playing video games, reading webcomics, and listening to music. 
+      These pastimes not only fill my free time but also help me develop my analytical and 
+      creative thinking.</p>
+  </header>
+
+  <div style="min-height:100vh;overflow-y: auto;">
+    <!-- Personal Information -->
+    <div class="w3-container w3-row w3-card w3-margin" id="info">
+      <h3>Personal Information</h3>
+      <div class="w3-container w3-third w3-padding w3-hide-small  w3-center">
+        <img src="photo.png" class="w3-circle" alt="Alps" style="height: 70%; max-width: 70%;">
+      </div>
+      <div class="w3-container w3-twothird">
+        <p>Name: ANIS NARIESHA BINTI ALIZAN</p>
+        <p>NRIC: 010517-02-0258</p>
+        <p>Address: NO. 262, Jalan Sidam KIRI 6, TAMAN SIDAM KIRI, 08000, SUNGAI PETANI, KEDAH. </p>
+        <p>Phone Number: +6019-8778346</p>
+        <p>E-mail: anisnarieshaalizan17@gmail.com</p>
+        <p>LinkedIn: Anis Nariesha</p>        
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="w3-container w3-row w3-card w3-margin ">
+      <h3>Education</h3>
+      <div class="w3-container w3-row w3-padding w3-center" style="margin: auto;">
+        <!-- SMKSP -->  
+        <div class="w3-card-4 w3-container w3-col mycard" style="height: 600px;">
+            <div class="w3-card-4 w3-container w3-sand">
+              <h4>SMK Seri Pantai</h4>
+            </div>
+            <div class="w3-container w3-center">
+              <img src="sripan.png" class="w3-container w3-center w3-image" style="height: 250px;">
+            </div>
+            <p>Year: 2014-2018</p>
+            <p style="overflow-x: hidden;overflow-y:auto; height: 220px;">
+                I studied in the Pure Science Stream at SMK Seri Pantai to complete my Sijil Pelajaran 
+                Malaysia (SPM). Receiving grades of 2A, 1A-, 2B+, 2C, and 2D, I proved my mettle in a 
+                variety of courses. I have a strong academic foundation and critical thinking abilities 
+                thanks to this school experience, which I constantly use in both my academic and 
+                professional endeavours.
+            </p>
+          </div>
+        <!-- KMK -->  
+        <div class="w3-card-4 w3-container w3-col mycard" style="height: 600px;">
+          <div class="w3-card-4 w3-container w3-sand">
+            <h4>Kolej Matrikulasi Kedah</h4>
+          </div>
+          <div class="w3-container w3-center">
+            <img src="kmk.gif" class="w3-container w3-center w3-image" style="height: 250px;">
+          </div>
+          <p>Year: 2019-2021</p>
+          <p style="overflow-x: hidden;overflow-y:auto; height: 220px;">
+            My matriculation studies were finished at Kolej Matrikulasi Kedah, where I focused 
+            on the Science Modul 3 programme. I studied computer science, math, biology, chemistry,
+            and other disciplines very hard during this schooling. I improved my analytical and 
+            problem-solving skills and graduated with a CGPA of 2.96, which gave me a solid basis 
+            for my present endeavour to earn a degree in IT with a networking concentration.
+          </p>
+        </div>
+        <!-- UUM -->  
+        <div class="w3-card-4 w3-container w3-col mycard" style="height: 600px;">
+          <div class="w3-card-4 w3-container w3-sand">
+            <h4>Universiti Utara Malaysia</h4>
+          </div>
+          <div class="w3-container w3-center">
+            <img src="uum.png" class="w3-container w3-center w3-image" style="height: 250px;">
+          </div>
+          <p>Year: 2021-Present</p>
+          <p style="overflow-x: hidden;overflow-y:auto; height: 220px;">
+            I am currently doing a Bachelor of Science with Honours in Information Technology, 
+            with a networking concentration, at Universiti Utara Malaysia (UUM), where I have been 
+            enrolled since 2021. My knowledge of networking has grown even more as a result of my 
+            coursework's extensive exploration of its concepts and technologies. I have a 3.13 CGPA
+            right now, but I'm committed to doing well in school and always trying to learn more 
+            about networking and IT.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div id="work" class="w3-container w3-row w3-card w3-margin ">
+      <h3>Work Experiences</h3>
+      <div class="w3-container w3-row w3-padding w3-center" style="margin: auto;">
+        <!-- KPP -->  
+        <div class="w3-card-4 w3-container w3-col mycard" style="height: 600px;">
+            <div class="w3-card-4 w3-container w3-sand">
+              <h4>Pasaraya Ekonomi KPP (2018)</h4>
+            </div>
+            <div class="w3-container w3-center">
+              <img src="kpp.jpg" class="w3-container w3-center w3-image" style="height: 250px;">
+            </div>
+            <p style="overflow-x: hidden;overflow-y:auto; height: 220px;">
+              In 2018, I worked as a Clothing Store Promoter at Pasaraya Ekonomi KPP in Kuala Kedah, 
+              Kedah, for four months. I handled jobs including inventory management, price tag 
+              labelling, and product restocking with efficiency and great customer service. My 
+              attention to detail and interpersonal skills, which are crucial qualities that I 
+              continue to use in both academic and professional situations, improved as a result of 
+              this role.
+            </p>
+          </div>
+        <!-- CFW -->  
+        <div class="w3-card-4 w3-container w3-col mycard" style="height: 600px;">
+          <div class="w3-card-4 w3-container w3-sand">
+            <h4>Cloud Fun Walk (2021)</h4>
+          </div>
+          <div class="w3-container w3-center">
+            <img src="cfw.jpg" class="w3-container w3-center w3-image" style="height: 250px;">
+          </div>
+          <p style="overflow-x: hidden;overflow-y:auto; height: 220px;">
+            I was the secretary for the Cloud Fun Walk, which took place at KMK in Changlun, Kedah 
+            in 2021. In this capacity, I was in charge of painstakingly preparing documentation 
+            and ensuring that the entire programme ran smoothly. My ability to manage duties 
+            effectively within a team dynamic, as well as my communication and organisational 
+            skills, were all improved by this experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div id="skills" class="w3-container w3-row w3-card w3-margin ">
+    <h3>Skills</h3>
+    <div class="w3-container w3-row-padding" style="margin: auto;">
+      <!-- Technical -->  
+      <div class="w3-third">
+        <h3>Technical</h3>
+        <div class="w3-container w3-col mycard" style="height: 600px;">
+          <h4>Microsoft Word</h4>
+          <p> 80% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:80%"></div>
+          </div>
+          <h4>Microsoft Powerpoint</h4>
+          <p> 60% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:60%"></div>
+          </div>
+          <h4>Microsoft Excel</h4>
+          <p> 30% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:30%"></div>
+          </div>
+          <h4>Java</h4>
+          <p> 40% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:40%"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Language -->  
+      <div class="w3-third">
+        <h3>Language</h3>
+        <div class="w3-container w3-col mycard" style="height: 600px;">
+          <h4>Malay</h4>
+          <p> 100% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:100%"></div>
+          </div>
+          <h4>English</h4>
+          <p> 70% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:70%"></div>
+          </div>
+          <h4>Indonesian</h4>
+          <p> 60% </p>
+          <div class="w3-border">
+            <div class="w3-sand" style="height:24px;width:60%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer containing Contact Information -->
+  <footer class="w3-container w3-sand">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h4>Social Media</h4>
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/ansnrsha/" target="_blank"><i class="fab fa-facebook-square"></i> Sha Alizan</a><br>
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com/qtieshaeee/" target="_blank"><i class="fab fa-twitter-square"></i> qtieshaeee</a><br>
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/qtieshae/" target="_blank"><i class="fab fa-instagram-square"></i> qtieshae</a><br>
+        <!-- TikTok Icon -->
+        <a href="https://www.tiktok.com/@qtieshae" target="_blank"><i class="fab fa-tiktok"></i> qtieshae</a><br>
+      </div>
+      <div class="w3-third">
+        <h4>Contact</h4>
+        <p>Email: anisnarieshaalizan17@gmail.com</p>
+        <p>Phone: +6019-8778346</p>
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/anis-nariesha-81b534259/" target="_blank"><i class="fab fa-linkedin"></i>Anis Nariesha</a><br>
+      </div>
+      <div class="w3-third">
+        <h4>Address</h4>
+        <p>262 Jalan Sidam Kiri 6, Taman Sidam Kiri</p>
+        <p>Sungai Petani, Kedah, 08000</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Function for Sidebar -->
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+</html> 
